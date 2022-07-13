@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes App</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="mobile-container">
+        <header>
+            <input type="text" id="search-term" placeholder="Search For A Dish" />
+            <button id="search"><i class="fas fa-search"></i></button>
+        </header>
+        <section class="fav-container">
+            <h3>Favorite Meals</h3>
+            <ul class="fav-meals" id="fav-meals"></ul>
+        </section>
+        <section class="meals" id="meals"></section>
+    </section>
+
+    <section class="popup-container hidden" id="meal-popup">
+        <section class="popup">
+            <button id="close-popup" class="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+            <section class="meal-info" id="meal-info"></section>
+        </section>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
